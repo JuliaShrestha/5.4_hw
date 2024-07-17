@@ -17,9 +17,9 @@ if (number === null) {
     } else {
         let isPrime = true;
 
-        for (let i = 2; i <= numberPrime / 2; i++) {
+        for (let i = 2; i < numberPrime; i++) {
             if (numberPrime % i === 0) {
-                isPrime = false;
+                isPrime = false;  
                 break;
             }
         }
