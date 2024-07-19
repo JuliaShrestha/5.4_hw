@@ -7,10 +7,10 @@ if (number === null) {
     alert('You canceled!');
 } else if (!number.trim()) {
     alert('You entered nothing!');
-} else if (isNaN(number) || number !== String(+number)) {
+} else if (isNaN(number) || !Number.isInteger(+number)) {
     alert('Enter a valid number!');
 } else {
-    const numberPrime = parseInt(number);
+    const numberPrime = +number;
 
     if (numberPrime <= 1) {
         console.log("The number is not prime.");
